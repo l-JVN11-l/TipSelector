@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: "Poppins", 'Arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: 1s;
+}
+
+.paid-title {
+  opacity: 0;
+  transform: translateY(200px);
+  animation: flyup 1s ease-in-out forwards;
+
+}
+
+.paid-p {
+  opacity: 0;
+  transform: translateY(200px);
+  animation: flyup 1.2s ease-in-out forwards;
+}
+
+b {
+  font-weight: bold;
+}
+
+@keyframes flyup {
+  0% {
+    transform: translateY(200);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+button {
+  background-color: rgb(0, 145, 255);
+  border: none;
+  padding: 1em 1.5em;
+  margin: 1em 1em 0.5em;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
+  transition: all 0.3s;
+  font-size: 1.25em;
+}
+
+
+.btn-group button {
+  font-size: 1em;
+  border: 2px solid rgb(220, 220, 220);
+  background: none;
+  color: black;
+}
+
+button:hover, button:focus {
+  background-color: rgb(0, 123, 217);
+}
+
+.btn-group button:hover, .btn-group button:focus {
+  background: rgb(220, 220, 220);
+}
+
+.title {
+  font-size: 2.5em;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.warning {
+  color: rgb(185, 0, 0);
+}
+
+.custom {
+  padding: 0;
+  margin: 0.8em 0 1.5em;
+  color: rgb(115, 115, 115);
+  text-decoration: underline;
+  font-size: 0.9em;
+  background: none;
+}
+
+.custom:hover, .custom:focus {
+  background: none;
+}
+
+.origMoney {
+  font-size: 1.25em;
+  color: rgb(115, 115, 115);
+  margin: 0;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input {
+  border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
